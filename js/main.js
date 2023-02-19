@@ -248,7 +248,7 @@ function completeTask({target}){
         );
         if(isConfirm){
             const mainItem = target.parentNode.parentNode.parentNode.parentNode;
-            const itemTitle = target.parentNode.parentNode.parentNode.parentNode.parentNode.previousElementSibling.textContent;
+            const itemTitle = target.parentNode.parentNode.parentNode.childNodes[0].textContent;
             const itemEta = target.parentNode.parentNode.previousElementSibling.previousElementSibling.textContent;
             const itemText = target.parentNode.parentNode.parentNode.parentNode.childNodes[1].textContent;
             const arrTask = []
