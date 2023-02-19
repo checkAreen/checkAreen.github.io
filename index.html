@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/331aed1ba9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <input name="search-field" class="header__form" id="elastic" type="text" placeholder="Search for tasks ...">
+                <h1 class="header__title">
+                    You've got <span class="header__title-span"></span> today
+                </h1>
+                <button id="addNewTask" class="header__button-addtask" type="button">
+                    <i class="fa-regular fa-square-plus"></i>
+                    Add New
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="onhold">
+        <div class="container">
+            <div class="onhold__inner"></div>
+        </div>
+    </div>
+
+    <div class="completed">
+        <div class="container">
+            <div class="completed__inner"></div>
+        </div>
+    </div>
+
+    <script src="js/live_search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
